@@ -1,0 +1,24 @@
+/*
+    MASTER CSS FILE
+        - Master style sheet that includes all other stylesheets
+*/
+
+/*
+    TYPOGRAPHY (FONT IMPORT)
+*/
+@import '_typography.css';
+
+/*
+    CSS RESET
+*/
+@import '_reset.css';
+
+/*
+    GLOBAL STYLES
+*/
+@import '_global.css';
+
+/*
+    [PAGE] INDEX
+*/
+@import '_indexStyles.css';

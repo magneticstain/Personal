@@ -1,0 +1,146 @@
+/*
+    GLOBAL CSS FILE
+        - style sheet that includes styles used site-wide
+*/
+
+html, body
+{
+    background: #fafafa;
+    border-top: 20px solid #000;
+    color: #333333;
+    font: 24px 'Open Sans', sans-serif;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+/* DIVS */
+/* container */
+#container
+{
+    margin: 0 auto;
+    width: 960px;
+}
+
+/* menu */
+nav
+{
+    border-bottom: 2px solid #000;
+    margin-top: 35px;
+    padding-bottom: 15px;
+}
+
+/* headline */
+#attnGrabber
+{
+    color: #878686;
+    margin: 60px;
+}
+
+/* main content */
+#content
+{
+    margin: 20px 0;
+}
+
+/* footer */
+footer
+{
+    border-top: 3px solid #878686;
+    clear: both;
+    color: #9C9C9C;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* TEXT */
+/* headings */
+nav h1 /* title */
+{
+    color: #878686;
+    /*border-bottom: 4px solid #E65A15;*/
+    /*border-top: 4px solid #E65A15;*/
+    display: inline-block;
+    font: 64px 'Economica', sans-serif;
+    padding: 10px 5px;
+    position: relative;
+    top: 8px;
+}
+
+#attnGrabber h2 /* headline */
+{
+    font: 28px 'Marvel', sans-serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* TEXT */
+/* headline */
+#attnGrabber .accentuate
+{
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+#attnGrabber .day
+{
+    border-top: 2px solid;
+    color: #C9C7C7;
+}
+
+#attnGrabber .night
+{
+    border-bottom: 2px solid;
+    color: #333;
+}
+
+#attnGrabber p
+{
+    display: inline;
+}
+
+/* LINKS */
+a:link
+{
+    color: #E65A15;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #E65A15;
+}
+
+a:hover
+{
+    border-bottom: 3px solid #E65A15;
+}
+
+a:active
+{
+    color: #333;
+    background-color: #E65A15;
+}
+
+nav a /* menu links */
+{
+    margin: 0 42px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+a.imgLink:hover
+{
+    border: none;
+}
+
+/* OTHER */
+hr
+{
+    color: #C9C7C7;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 70%;
+}
