@@ -6,6 +6,7 @@
 /* DIVS */
 .detailsBlob
 {
+    background-color: #FFF;
     border: 3px solid #333;
     float: left;
     margin: 10px 20px;
@@ -29,6 +30,14 @@
     text-align: left;
     height: 250px;
     width: 80%;
+}
+
+footer
+{
+    background-color: #000;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
 }
 
 /* HEADINGS */
@@ -69,4 +78,27 @@
 {
     cursor: pointer;
     opacity: 1;
+}
+
+.detailsBlob img
+{
+    margin: 40px 5px;
+}
+
+#music p
+{
+    background-color: #333;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #E65A15;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+}
+
+/* OTHER */
+hr
+{
+    margin: 7px auto;
+    width: 90%;
 }

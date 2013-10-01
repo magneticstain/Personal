@@ -3,20 +3,37 @@
         - style sheet that includes styles used site-wide
 */
 
-html, body
+html
 {
-    background: #fafafa;
+    /*height: 100%;*/
+    min-height: 100%;
+    /*min-width: 100%;*/
+}
+
+body
+{
+    /*background: #fafafa;*/
+    /* Courtesy of http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(top,  rgba(114,114,114,0) 0%, rgba(115,115,115,0) 1%, rgba(221,221,221,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(114,114,114,0)), color-stop(1%,rgba(115,115,115,0)), color-stop(100%,rgba(221,221,221,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(114,114,114,0) 0%,rgba(115,115,115,0) 1%,rgba(221,221,221,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(114,114,114,0) 0%,rgba(115,115,115,0) 1%,rgba(221,221,221,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(114,114,114,0) 0%,rgba(115,115,115,0) 1%,rgba(221,221,221,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(114,114,114,0) 0%,rgba(115,115,115,0) 1%,rgba(221,221,221,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00727272', endColorstr='#a6dddddd',GradientType=0 ); /* IE6-9 */
     border-top: 20px solid #000;
     color: #333333;
     font: 24px 'Open Sans', sans-serif;
     /*height: 100%;*/
-    /*width: 100%;*/
+    min-height: 100%;
 }
 
 /* DIVS */
 /* container */
 #container
 {
+    /* needed for content wrapper to take up empty space on page */
+    height: 100%;
     margin: 0 auto;
     width: 960px;
 }
@@ -37,9 +54,16 @@ nav
 }
 
 /* main content */
-#content
+#contentWrapper
 {
-    margin: 20px 0;
+    overflow: auto;
+}
+
+.wideContent
+{
+    border: 5px solid #333;
+    padding: 30px;
+    /*height: 200px;*/
 }
 
 /* footer */
@@ -48,9 +72,12 @@ footer
     border-top: 3px solid #878686;
     clear: both;
     color: #9C9C9C;
-    margin: 25px;
-    padding: 25px;
+    font: 18px 'Voltaire', sans-serif;
+    letter-spacing: 3px;
+    margin: 45px 0 0 0;
+    padding: 25px 0;
     text-align: center;
+    width: 100%;
 }
 
 /* TEXT */
@@ -74,12 +101,26 @@ nav h1 /* title */
     text-align: center;
 }
 
+.wideContent h4
+{
+    border-bottom: 3px solid;
+    display: inline;
+}
+
+/* error messages */
+.error
+{
+    color: #B80F0F;
+    text-align: center;
+}
+
 /* TEXT */
 /* headline */
 #attnGrabber .accentuate
 {
-  font-weight: bold;
-  padding-bottom: 3px;
+    display: inline;
+    font-weight: bold;
+    padding-bottom: 3px;
 }
 
 #attnGrabber .day
@@ -139,8 +180,7 @@ a.imgLink:hover
 hr
 {
     color: #C9C7C7;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px auto;
     text-align: center;
     width: 70%;
 }

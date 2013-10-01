@@ -18,22 +18,23 @@
 
         // parse XML results
         $musicTrackHTML =   '';
+        $currentTrackNum    =   0;
         if($musicXML)
         {
-            $musicTrackHTML .=  '
-                                <ol class="trackListing">';
             foreach($musicXML->channel->item as $item)
             {
-                $musicTrackHTML .=  '
-                                        <li>'.$item->title.'</li>';
-            }
+                // increase track count
+                $currentTrackNum++;
 
-            $musicTrackHTML .=  '
-                                </ol>';
+                // append to html
+                $musicTrackHTML .=  '<p>'.$currentTrackNum.'. '.$item->title.'</p>
+                                    <hr />
+                                    ';
+            }
         }
         else
         {
-            $musicTrackHTML =   '<p class="error">Could not load XML :(</p>';
+            $musicTrackHTML =   '<p class="error">Could not load tracks :(</p>';
         }
 
         return $musicTrackHTML;

@@ -1,0 +1,51 @@
+/*
+    CONTACT PAGE CSS FILE
+        - style sheet that includes styles used on the contact page
+*/
+
+/* HEADINGS */
+#contactForm h4
+{
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+/* TEXT */
+#contactForm
+{
+    font-size: 22px;
+}
+
+/* TABLES */
+#contactForm table
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+#contactForm td,th
+{
+    padding: 10px 15px;
+    padding-left: 0;
+    vertical-align: top;
+}
+
+/* FORMS */
+#contactForm input[type="text"],textarea
+{
+    border: 2px solid #333;
+    border-radius: 7px;
+    font: 22px 'Open Sans', sans-serif;
+}
+
+#contactForm input[type="text"]
+{
+    height: 28px;
+    padding: 5px;
+    padding-top: 0;
+}
+
+#contactForm textarea
+{
+    padding: 15px;
+}
