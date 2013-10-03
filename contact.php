@@ -27,6 +27,14 @@
     /****************************************************************************/
     require './include/_collector.php';
 
+    // check for previous message
+    $prevMsg    =   '';
+    if((isset($_SESSION['msg'])) && (!empty($_SESSION['msg'])))
+    {
+        // set msg
+        $prevMsg    =   $_SESSION['msg'];
+    }
+
     // generate page-specific content
     $content    =   '
                         <div class="wideContent">
@@ -36,6 +44,7 @@
                             <div id="contactForm">
                                 <h4>contact me.</h4>
                                 <br />
+                                '.$prevMsg.'
                                 <form method="post" action="scripts/contact_.php">
                                     <table>
                                         <tr>
@@ -59,7 +68,15 @@
                                                 Message:
                                             </td>
                                             <td>
-                                                <textarea title="Message" cols="40" rows="10"></textarea>
+                                                <textarea title="Message" name="c_msg" cols="40" rows="10"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <input title="Send Message!" type="submit" value="Send" />
                                             </td>
                                         </tr>
                                     </table>

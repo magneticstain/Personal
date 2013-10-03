@@ -6,6 +6,7 @@
 /* HEADINGS */
 #contactForm h4
 {
+    color: #E65A15;
     font-size: 60px;
     letter-spacing: 5px;
 }
@@ -30,6 +31,12 @@
     vertical-align: top;
 }
 
+#contactForm tr td:first-child
+{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 18px;
+}
+
 /* FORMS */
 #contactForm input[type="text"],textarea
 {
@@ -42,10 +49,27 @@
 {
     height: 28px;
     padding: 5px;
-    padding-top: 0;
+    /* Make sure textboxes line up with field names */
 }
 
 #contactForm textarea
 {
     padding: 15px;
+}
+
+#contactForm input[type="submit"]
+{
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    float: right;
+    font-size: 24px;
+    padding: 8px;
+}
+
+#contactForm input[type="submit"]:hover
+{
+    background-color: #E65A15;
+    color: #333;
+    opacity: .75;
 }

@@ -32,6 +32,12 @@
             <!-- CSS Import -->
             <link rel="stylesheet" href="./css/master.css" type="text/css" media="all" />
 
+            <!-- jQuery Import -->
+            <!-- Google Hosted jQuery -->
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+            <!-- Custom jQuery -->
+            <script type="text/javascript" src="js/custom_jquery.js"></script>
+
         </head>
         <body id="'.$pageTitle.'">
             <div id="container">
@@ -55,7 +61,7 @@
                 <section id="content">
                     <div id="contentWrapper">
                         '.$content.'
-                    </div
+                    </div>
                 </section>
             </div>
             <footer>
