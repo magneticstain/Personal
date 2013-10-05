@@ -27,6 +27,9 @@
     /****************************************************************************/
     require './include/_collector.php';
 
+    // set message clear flag
+    $clearMsg   =   true;
+
     // check for previous message
     $prevMsg    =   '';
     if((isset($_SESSION['msg'])) && (!empty($_SESSION['msg'])))
@@ -43,7 +46,6 @@
                             </div>
                             <div id="contactForm">
                                 <h4>contact me.</h4>
-                                <br />
                                 '.$prevMsg.'
                                 <form method="post" action="scripts/contact_.php">
                                     <table>

@@ -8,5 +8,9 @@
     /****************************************************************************/
 
     // todo
-
+    // clear msg if not a script
+    if(isset($clearSavedData) && $clearSavedData)
+    {
+        unset($_SESSION['msg']);
+    }
 ?>

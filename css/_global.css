@@ -104,14 +104,21 @@ nav h1 /* title */
 .wideContent h4
 {
     border-bottom: 3px solid;
-    display: inline;
+    /*display: inline;*/
 }
 
-/* error messages */
+/* messages */
 .error
 {
     color: #B80F0F;
-    text-align: center;
+    margin: 5px;
+    /*text-align: center;*/
+}
+
+.success
+{
+    color: #07AD0A;
+    margin: 5px;
 }
 
 /* TEXT */

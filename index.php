@@ -24,6 +24,9 @@
     /****************************************************************************/
     require './include/_collector.php';
 
+    // set message clear flag
+    $clearSavedData   =   true;
+
     // generate page-specific content
     $content    =   '
                             <div class="detailsBlob">
