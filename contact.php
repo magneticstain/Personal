@@ -28,7 +28,7 @@
     require './include/_collector.php';
 
     // set message clear flag
-    $clearMsg   =   true;
+    $clearSavedData   =   true;
 
     // check for previous message
     $prevMsg    =   '';
@@ -36,6 +36,23 @@
     {
         // set msg
         $prevMsg    =   $_SESSION['msg'];
+    }
+
+    // check for previously submitted data
+    $prevContactData    =   '';
+    if(isset($_SESSION['prevFormData']))
+    {
+        // use previous data
+        $prevContactData    =   $_SESSION['prevFormData'];
+    }
+    else
+    {
+        // make sure to initialize data
+        $prevContactData    =   array(
+            'contactName'       =>  '',
+            'contactSubject'    =>  '',
+            'contactMsg'        =>  ''
+        );
     }
 
     // generate page-specific content
@@ -54,7 +71,7 @@
                                                 Name:
                                             </td>
                                             <td>
-                                                <input title="Your Name" name="c_name" type="text" />
+                                                <input title="Your Name" name="c_name" type="text" value="'.$prevContactData['contactName'].'" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -62,7 +79,7 @@
                                                 Subject:
                                             </td>
                                             <td>
-                                                <input title="Subject" name="c_subj" type="text" />
+                                                <input title="Subject" name="c_subj" type="text" value="'.$prevContactData['contactSubject'].'" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -70,15 +87,15 @@
                                                 Message:
                                             </td>
                                             <td>
-                                                <textarea title="Message" name="c_msg" cols="40" rows="10"></textarea>
+                                                <textarea title="Message" name="c_msg" cols="40" rows="10">'.$prevContactData['contactMsg'].'</textarea>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-
+                                                <input title="BotThwarter" name="botChk" type="hidden" value="" />
                                             </td>
                                             <td>
-                                                <input title="Send Message!" type="submit" value="Send" />
+                                                <input title="Send Message!" name="submit" type="submit" value="Send" />
                                             </td>
                                         </tr>
                                     </table>

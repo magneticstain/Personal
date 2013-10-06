@@ -24,63 +24,94 @@
         return $mailed;
     }
 
-    /* Collect POST data */
-    $name       =   $_POST['c_name'];
-    $subject    =   $_POST['c_subj'];
-    $msg        =   $_POST['c_msg'];
-
-    /* Sanatize */
-    $validData  =   false;
-    // check name
-    if((!empty($name)) && (preg_match("/[-_a-zA-Z'` ]/", $name)))
+    // check if form was actually submitted
+    if(isset($_POST['submit']))
     {
-        // check subject
-        if(!empty($subject))
+        // bot check
+        if(!empty($_POST['botChk']))
         {
-            // check message
-            if(!empty($msg))
-            {
-                $validData  =   true;
-            }
-        }
-    }
-
-    if(!$validData)
-    {
-        $_SESSION['msg']    =   '<p class="error">&raquo; All fields required please.</p>';
-
-        header('Location: contact.php');
-    }
-    else
-    {
-        // set rest of variables
-        $to     =   'domiq@notsharingmy.info';
-        $header =   "From: contact@carlso.net\r\n";
-
-        // send it
-        $wasMailed  =   sendMail($to, $subject, $msg, $header);
-
-        if($wasMailed)
-        {
-            // successfully sent
-            $_SESSION['msg']    =   '<p class="success">&raquo; Message successfully sent.</p>';
+            // we got ourselves a bot boys!!!
+            // redirect to index
+            header('Location: ../index.php');
         }
         else
         {
-            // something went wrong, and the message wasn't sent
-            $_SESSION['msg']    =   '<p class="error">&raquo; Uh-oh! Looks like something went wrong along the way :(</p>';
+            // it's a human!
+            /* Collect POST data */
+            $name       =   $_POST['c_name'];
+            $subject    =   $_POST['c_subj'];
+            $msg        =   $_POST['c_msg'];
+
+            /* Sanatize */
+            $validData  =   false;
+            // check name
+            if((!empty($name)) && (preg_match("/[-_a-zA-Z'` ]/", $name)))
+            {
+                // check subject
+                if(!empty($subject))
+                {
+                    // check message
+                    if(!empty($msg))
+                    {
+                        $validData  =   true;
+                    }
+                }
+            }
+
+            if(!$validData)
+            {
+                $_SESSION['msg']    =   '<p class="error">&raquo; All fields required please.</p>';
+
+                // save data to be outputted in contact.php after redirect
+                $_SESSION['prevFormData']   =   array(
+                    'contactName'       =>  $name,
+                    'contactSubject'    =>  $subject,
+                    'contactMsg'        =>  $msg
+                );
+
+                header('Location: contact.php');
+            }
+            else
+            {
+                // set rest of variables
+                $to     =   'domiq@notsharingmy.info';
+                $header =   "From: contact@carlso.net\r\n";
+
+                // send it
+                $wasMailed  =   sendMail($to, $subject, $msg, $header);
+
+                if($wasMailed)
+                {
+                    // make sure previous form data is removed
+                    unset($_SESSION['prevFormData']);
+
+                    // successfully sent
+                    $_SESSION['msg']    =   '<p class="success">&raquo; Message successfully sent.</p>';
+                }
+                else
+                {
+                    // something went wrong, and the message wasn't sent
+                    $_SESSION['msg']    =   '<p class="error">&raquo; Uh-oh! Looks like something went wrong along the way :(</p>';
+                }
+            }
+
+            /****************************************************************************/
+            /*                                                                          */
+            /*                  >>> Cleanup                                             */
+            /*                      --- Makes sure that all data                        */
+            /*                          is unset, cleared, etc,                         */
+            /*                                                                          */
+            /****************************************************************************/
+            require '../include/_cleanup.php';
+
+            // always redirect to contact form
+            header('Location: ../contact.php');
         }
     }
-
-    /****************************************************************************/
-    /*                                                                          */
-    /*                  >>> Cleanup                                             */
-    /*                      --- Makes sure that all data                        */
-    /*                          is unset, cleared, etc,                         */
-    /*                                                                          */
-    /****************************************************************************/
-    require '../include/_cleanup.php';
-
-    // always redirect to contact form
-    header('Location: ../contact.php');
+    else
+    {
+        // they do not belong here...
+        // redirect to index
+        header('Location: ../index.php');
+    }
 ?>

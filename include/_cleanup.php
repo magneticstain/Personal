@@ -11,6 +11,10 @@
     // clear msg if not a script
     if(isset($clearSavedData) && $clearSavedData)
     {
+        // clear status message
         unset($_SESSION['msg']);
+
+        // clear previous form data after redisplaying
+        unset($_SESSION['prevFormData']);
     }
 ?>
