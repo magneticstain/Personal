@@ -32,7 +32,7 @@
         {
             // we got ourselves a bot boys!!!
             // redirect to index
-            header('Location: ../index.php');
+            header('Location: https://www.carlso.net/');
         }
         else
         {
@@ -112,6 +112,6 @@
     {
         // they do not belong here...
         // redirect to index
-        header('Location: ../index.php');
+        header('Location: https://www.carlso.net/');
     }
 ?>

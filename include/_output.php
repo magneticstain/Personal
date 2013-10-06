@@ -44,12 +44,12 @@
                 <!-- BEGIN HEADER -->
                 <header id="banner">
                     <nav>
-                        <a href="index.php" title="home">home</a>
-                        <a target="_blank" href="https://docs.google.com/file/d/0BykFe7XdLgqkT21lRDB3dU9VWkE/edit?usp=sharing" title="josh carlson\'s résumé">résumé</a>
+                        <a href="https://www.carlso.net/" title="home">home</a>
+                        <a target="_blank" href="https://docs.google.com/file/d/0BykFe7XdLgqkVTVHdmd4U2tydFE/edit?usp=sharing" title="josh carlson\'s résumé">résumé</a>
                         <h1>
                             <strong>Josh Carlson</strong>
                         </h1>
-                        <a href="//blog.carlso.net" title="josh carlson\'s blog">blog</a>
+                        <a href="http://blog.carlso.net" title="josh carlson\'s blog">blog</a>
                         <a href="contact.php" title="contact josh carlson">contact</a>
                     </nav>
                     <div id="attnGrabber">
