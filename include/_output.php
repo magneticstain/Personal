@@ -30,6 +30,8 @@
         <html lang="en">
         <head>
             <meta charset="utf-8" />
+            <meta name="keywords" content="josh, carlson, purcell, web development, information security, technology, open-source, coastal carolina university, dell secureworks, web-application security" />
+            <meta name="description" content="Welcome to the personal website of Joshua Carlson-Purcell; system administrator, developer, and infosec researcher." />
 
             <title>CarlsoNet &raquo;&laquo; '.$pageTitle.'</title>
 
@@ -65,7 +67,7 @@
                 <header id="banner">
                     <div id="socialMediaContainer">
                         <a target="_blank" href="https://www.facebook.com/magneticstain"><img alt="Josh Carlson on Facebook" src="media/icons/social_media/facebook.png" /></a>
-                        <a target="_blank" href="http://goo.gl/r8eBlL"><img alt="Josh Carlson on Google+" src="media/icons/social_media/g_plus.png" /></a>
+                        <a target="_blank" href="https://plus.google.com/109580240552650009886/posts?rel=author"><img alt="Josh Carlson on Google+" src="media/icons/social_media/g_plus.png" /></a>
                         <a target="_blank" href="http://lnkd.in/9Dqkwy"><img alt="Josh Carlson on LinkedIn" src="media/icons/social_media/linkedin.png" /></a>
                         <a target="_blank" href="http://reddit.com/u/MagneticStain"><img alt="Josh Carlson on Reddit" src="media/icons/social_media/reddit.png" /></a>
                     </div>
