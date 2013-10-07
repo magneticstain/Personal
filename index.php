@@ -52,11 +52,11 @@
                             <h3>Web Development</h3>
                             <div class="indexInfoModule">
                                 <h4>Coastal Carolina University</h4>
-                                <a target="_blank" href="http://ww2.coastal.edu/jlcarlso/wgs/v2/">
+                                <a class="imgLink" target="_blank" href="http://ww2.coastal.edu/jlcarlso/wgs/v2/">
                                     <img height="95" width="200" title="Women\'s and Gender Studies Website" alt="Click to go to the Women\'s and Gender Studies department of Coastal Carolina University\'s website" src="media/site_thumbnail1.png" />
                                 </a>
                                 <hr />
-                                <a target="_blank" href="http://ww2.coastal.edu/pwhalen/">
+                                <a class="imgLink" target="_blank" href="http://ww2.coastal.edu/pwhalen/">
                                     <img height="95" width="200" title="Website of Dr. Phillip Wallen" alt="Click to go to the website of Dr. Phillip Wallen" src="media/site_thumbnail2.png" />
                                 </a>
                             </div>

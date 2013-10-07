@@ -15,6 +15,7 @@
 
 .dbTop
 {
+    height: 750px;
     width: 425px;
 }
 
@@ -56,6 +57,7 @@ footer
     display: inline-block;
     font-size: 26px;
     margin: 10px 0;
+    padding-bottom: 25px;
     text-align: center;
     width: 90%;
 }
@@ -91,7 +93,7 @@ footer
 
 .detailsBlob img
 {
-    margin: 40px 5px;
+    margin: 40px 5px 0;
 }
 
 #music p

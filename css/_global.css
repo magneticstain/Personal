@@ -183,6 +183,11 @@ nav a /* menu links */
     padding-bottom: 10px;
 }
 
+a.imgLink:active
+{
+    background: none;
+}
+
 a.imgLink:hover
 {
     border: none;
