@@ -76,14 +76,14 @@
                             <strong>Josh Carlson</strong>
                         </h1>
                         <a target="_blank" href="http://blog.carlso.net" title="josh carlson\'s blog">blog</a>
-                        <a href="contact.php" title="contact josh carlson">contact</a>
+                        <a href="contact" title="contact josh carlson">contact</a>
                     </nav>
                     <div id="attnGrabber">
                         <h2>
                             Sysadmin by <p class="accentuate day">day</p>. Developer &amp; infosec researcher by <p class="accentuate night">night</p>.
                         </h2>
                         <h2>
-                            Learn more <a title="About Josh Carlson" href="about.php">about me</a>.
+                            Learn more <a title="About Josh Carlson" href="about">about me</a>.
                         </h2>
                     </div>
                 </header>

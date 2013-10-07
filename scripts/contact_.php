@@ -69,7 +69,7 @@
                     'contactMsg'        =>  $msg
                 );
 
-                header('Location: contact.php');
+                header('Location: contact');
             }
             else
             {
@@ -105,7 +105,7 @@
             require '../include/_cleanup.php';
 
             // always redirect to contact form
-            header('Location: ../contact.php');
+            header('Location: ../contact');
         }
     }
     else
