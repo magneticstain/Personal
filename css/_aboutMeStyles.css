@@ -1,0 +1,13 @@
+/*
+    ABOUT ME PAGE CSS FILE
+        - style sheet that includes styles used on the about me page
+*/
+
+/* TEXT */
+#aboutme #defaultForm p
+{
+    font-size: 16px;
+    line-height: 220%;
+    margin: 15px 0;
+    text-indent: 35px;
+}

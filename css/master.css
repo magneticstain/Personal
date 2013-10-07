@@ -24,6 +24,11 @@
 @import '_indexStyles.css';
 
 /*
-    [PAGE] INDEX
+    [PAGE] CONTACT
 */
 @import '_contactStyles.css';
+
+/*
+    [PAGE] ABOUT ME
+*/
+@import '_aboutMeStyles.css';

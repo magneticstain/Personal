@@ -4,7 +4,7 @@
 */
 
 /* HEADINGS */
-#contactForm h4
+#defaultForm h4
 {
     color: #E65A15;
     font-size: 60px;
@@ -12,52 +12,52 @@
 }
 
 /* TEXT */
-#contactForm
+#defaultForm
 {
     font-size: 22px;
 }
 
 /* TABLES */
-#contactForm table
+#defaultForm table
 {
     border-collapse: collapse;
     margin: 10px 0 25px;
 }
 
-#contactForm td,th
+#defaultForm td,th
 {
     padding: 10px 15px;
     padding-left: 0;
     vertical-align: top;
 }
 
-#contactForm tr td:first-child
+#defaultForm tr td:first-child
 {
     font-family: 'Roboto', sans-serif;
     padding-top: 18px;
 }
 
 /* FORMS */
-#contactForm input[type="text"],textarea
+#defaultForm input[type="text"],textarea
 {
     border: 2px solid #333;
     border-radius: 7px;
     font: 22px 'Open Sans', sans-serif;
 }
 
-#contactForm input[type="text"]
+#defaultForm input[type="text"]
 {
     height: 28px;
     padding: 5px;
     /* Make sure textboxes line up with field names */
 }
 
-#contactForm textarea
+#defaultForm textarea
 {
     padding: 15px;
 }
 
-#contactForm input[type="submit"]
+#defaultForm input[type="submit"]
 {
     border: 2px solid #333;
     border-radius: 5px;
@@ -67,7 +67,7 @@
     padding: 8px;
 }
 
-#contactForm input[type="submit"]:hover
+#defaultForm input[type="submit"]:hover
 {
     background-color: #E65A15;
     color: #333;

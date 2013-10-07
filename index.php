@@ -29,9 +29,9 @@
 
     // generate page-specific content
     $content    =   '
-                            <div class="detailsBlob">
+                            <div class="detailsBlob dbTop">
                             <img height="128" width="128" alt="Programming" src="media/icons/open_source_icon.png" />
-                            <h3>Open-source <br /> Projects</h3>
+                            <h3>Open-source Projects</h3>
                             <div class="indexInfoModule">
                                 <h4>[PHP] Pastrie</h4>
                                 <p>A webapp coded in PHP designed to enable users to easily deploy their own pastebin locally on their own network.</p>
@@ -47,9 +47,9 @@
                             </div>
                             <br />
                         </div>
-                        <div class="detailsBlob">
+                        <div class="detailsBlob dbTop">
                             <img height="128" width="128" alt="WebDev" src="media/icons/webdev_icon.png" />
-                            <h3>Web <br /> Development</h3>
+                            <h3>Web Development</h3>
                             <div class="indexInfoModule">
                                 <h4>Coastal Carolina University</h4>
                                 <a target="_blank" href="http://ww2.coastal.edu/jlcarlso/wgs/v2/">
@@ -61,9 +61,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="detailsBlob">
+                        <br />
+                        <div class="detailsBlob dbBottom">
                             <img height="128" width="128" alt="Current Events" src="media/icons/current_events_icon.png" />
-                            <h3>What I\'m <br /> Up To</h3>
+                            <h3>What I\'m Up To</h3>
                             <div id="music" class="indexInfoModule">
                                 <h4>Recent Songs</h4>
                                 '.getRecentTracks().'

@@ -61,7 +61,7 @@
                             <div id="socialMedia">
 
                             </div>
-                            <div id="contactForm">
+                            <div id="defaultForm">
                                 <h4>contact me.</h4>
                                 '.$prevMsg.'
                                 <form method="post" action="scripts/contact_.php">

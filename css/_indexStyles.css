@@ -11,7 +11,16 @@
     float: left;
     margin: 10px 20px;
     text-align: center;
-    width: 270px;
+}
+
+.dbTop
+{
+    width: 425px;
+}
+
+.dbBottom
+{
+    width: 895px;
 }
 
 .indexInfoModule

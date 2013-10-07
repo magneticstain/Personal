@@ -13,6 +13,12 @@
     {
         $pageTitle  =   'Home';
     }
+    else
+    {
+        // normalize page title for valid body ID
+        // remove spaces, make all lower case
+        $pageTitleNormalized  =   strtolower(str_replace(' ', '', $pageTitle));
+    }
 
     // check if content was set
     if((!isset($content)) || (empty($pageTitle)))
@@ -23,23 +29,22 @@
     // echo out HTML
     echo '
         <!DOCTYPE html>
-        <html>
+        <html lang="en">
         <head>
             <meta charset="utf-8" />
 
-            <title>CarlsoNet >> '.$pageTitle.'</title>
+            <title>CarlsoNet &raquo;&laquo; '.$pageTitle.'</title>
 
             <!-- CSS Import -->
             <link rel="stylesheet" href="./css/master.css" type="text/css" media="all" />
 
             <!-- jQuery Import -->
             <!-- Google Hosted jQuery -->
-            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/2.0.3/jquery-ui.min.js"></script>
             <!-- Custom jQuery -->
             <script type="text/javascript" src="js/custom_jquery.js"></script>
-
         </head>
-        <body id="'.$pageTitle.'">
+        <body id="'.$pageTitleNormalized.'">
             <div id="container">
                 <!-- BEGIN HEADER -->
                 <header id="banner">
@@ -55,6 +60,9 @@
                     <div id="attnGrabber">
                         <h2>
                             Sysadmin by <p class="accentuate day">day</p>. Developer &amp; infosec researcher by <p class="accentuate night">night</p>.
+                        </h2>
+                        <h2>
+                            Learn more <a title="About Josh Carlson" href="about.php">about me</a>.
                         </h2>
                     </div>
                 </header>
