@@ -38,21 +38,44 @@
 
             <!-- jQuery Import -->
             <!-- Google Hosted jQuery -->
-            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/2.0.3/jquery-ui.min.js"></script>
+            <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/2.0.3/jquery-ui.min.js"></script> -->
             <!-- Custom jQuery -->
-            <script type="text/javascript" src="js/custom_jquery.js"></script>
+            <!-- <script type="text/javascript" src="js/custom_jquery.js"></script> -->
+
+            <!-- Google Analytics Code -->
+            <script type="text/javascript">
+
+              var _gaq = _gaq || [];
+              _gaq.push([\'_setAccount\', \'UA-30874775-1\']);
+              _gaq.push([\'_setDomainName\', \'carlso.net\']);
+              _gaq.push([\'_trackPageview\']);
+
+              (function() {
+                var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;
+                ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';
+                var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+            </script>
+            <!-- End Google Analytics Code -->
         </head>
         <body id="'.$pageTitleNormalized.'">
             <div id="container">
                 <!-- BEGIN HEADER -->
                 <header id="banner">
+                    <div id="socialMediaContainer">
+                        <a target="_blank" href="https://www.facebook.com/magneticstain"><img alt="Josh Carlson on Facebook" src="media/icons/social_media/facebook.png" /></a>
+                        <a target="_blank" href="http://goo.gl/r8eBlL"><img alt="Josh Carlson on Google+" src="media/icons/social_media/g_plus.png" /></a>
+                        <a target="_blank" href="http://lnkd.in/9Dqkwy"><img alt="Josh Carlson on LinkedIn" src="media/icons/social_media/linkedin.png" /></a>
+                        <a target="_blank" href="http://reddit.com/u/MagneticStain"><img alt="Josh Carlson on Reddit" src="media/icons/social_media/reddit.png" /></a>
+                    </div>
                     <nav>
                         <a href="https://www.carlso.net/" title="home">home</a>
                         <a target="_blank" href="https://docs.google.com/file/d/0BykFe7XdLgqkVTVHdmd4U2tydFE/edit?usp=sharing" title="josh carlson\'s résumé">résumé</a>
                         <h1>
                             <strong>Josh Carlson</strong>
                         </h1>
-                        <a href="http://blog.carlso.net" title="josh carlson\'s blog">blog</a>
+                        <a target="_blank" href="http://blog.carlso.net" title="josh carlson\'s blog">blog</a>
                         <a href="contact.php" title="contact josh carlson">contact</a>
                     </nav>
                     <div id="attnGrabber">

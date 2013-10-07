@@ -38,11 +38,16 @@ body
     width: 960px;
 }
 
+#socialMediaContainer
+{
+    text-align: center;
+}
+
 /* menu */
 nav
 {
     border-bottom: 2px solid #000;
-    margin-top: 35px;
+    margin-top: 5px;
     padding-bottom: 15px;
 }
 
@@ -181,6 +186,18 @@ nav a /* menu links */
 a.imgLink:hover
 {
     border: none;
+}
+
+/* remove active background from social media links */
+#socialMediaContainer a:active
+{
+    background: none;
+}
+
+/* IMGS */
+#socialMediaContainer img
+{
+    margin: 0 4px;
 }
 
 /* OTHER */

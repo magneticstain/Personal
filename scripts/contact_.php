@@ -37,12 +37,12 @@
         else
         {
             // it's a human!
-            /* Collect POST data */
-            $name       =   $_POST['c_name'];
-            $subject    =   $_POST['c_subj'];
-            $msg        =   $_POST['c_msg'];
+            /* Collect POST data and sanatize */
+            $name       =   htmlentities($_POST['c_name']);
+            $subject    =   htmlentities($_POST['c_subj']);
+            $msg        =   htmlentities($_POST['c_msg']);
 
-            /* Sanatize */
+            /* Verify */
             $validData  =   false;
             // check name
             if((!empty($name)) && (preg_match("/[-_a-zA-Z'` ]/", $name)))

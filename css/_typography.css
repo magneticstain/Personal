@@ -1,13 +1,18 @@
 /*
     TYPOGRAPHY CSS FILE
         - style sheet that includes imports of Google web fonts
+        - Font Uses
+            - Economica
+                - Use: Title
+            - Marvel
+                - Use: Attentian Grabber (h2 below navigation)
+            - Open Sans
+                - Use: Default Body, Default Form Input Field Titles
+            - Roboto
+                - Use: Default Form Title Name
+            - Voltaire
+                - Use:
 */
 
-/* Permalink: http://www.google.com/fonts/#ReviewPlace:refine/Collection:Dosis|Abel|Overlock|Economica|Quicksand|Josefin+Sans|Monda|Open+Sans|Marvel */
-@import url(https://fonts.googleapis.com/css?family=Economica|Open+Sans|Marvel);
-
-/* Footer Font */
-@import url(https://fonts.googleapis.com/css?family=Voltaire);
-
-/* Contact Form Field Name Font */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* Permalink: https://www.google.com/fonts/#ReviewPlace:refine/Collection:Economica|Open+Sans|Marvel|Roboto|Voltaire */
+@import url(https://fonts.googleapis.com/css?family=Economica|Open+Sans|Marvel|Roboto|Voltaire);

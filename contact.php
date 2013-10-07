@@ -58,9 +58,6 @@
     // generate page-specific content
     $content    =   '
                         <div class="wideContent">
-                            <div id="socialMedia">
-
-                            </div>
                             <div id="defaultForm">
                                 <h4>contact me.</h4>
                                 '.$prevMsg.'
