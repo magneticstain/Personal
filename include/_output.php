@@ -13,12 +13,10 @@
     {
         $pageTitle  =   'Home';
     }
-    else
-    {
-        // normalize page title for valid body ID
-        // remove spaces, make all lower case
-        $pageTitleNormalized  =   strtolower(str_replace(' ', '', $pageTitle));
-    }
+
+    // normalize page title for valid body ID
+    // remove spaces, make all lower case
+    $pageTitleNormalized  =   strtolower(str_replace(' ', '', $pageTitle));
 
     // check if content was set
     if((!isset($content)) || (empty($pageTitle)))
