@@ -1,3 +1,5 @@
+# Remove File Ext
+# see http://stackoverflow.com/questions/13540353/using-htaccess-to-remove-php-file-extension-from-url
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^(.*)\.(.*)$
 RewriteRule ^(.*)$ %{REQUEST_URI}.php [R]
