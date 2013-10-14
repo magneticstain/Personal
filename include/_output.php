@@ -30,7 +30,7 @@
         <html lang="en">
         <head>
             <meta charset="utf-8" />
-            <meta name="keywords" content="josh, carlson, purcell, web development, information security, technology, open-source, coastal carolina university, dell secureworks, web-application security" />
+            <meta name="keywords" content="carlsonet, josh, carlson, purcell, web development, information security, technology, open-source, coastal carolina university, dell secureworks, web-application security" />
             <meta name="description" content="Welcome to the personal website of Joshua Carlson-Purcell; system administrator, developer, and infosec researcher." />
 
             <title>CarlsoNet &raquo;&laquo; '.$pageTitle.'</title>
