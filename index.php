@@ -29,20 +29,18 @@
 
     // generate page-specific content
     $content    =   '
-                            <div class="detailsBlob dbTop">
+                        <div class="detailsBlob dbTop">
                             <img height="128" width="128" alt="Programming" src="media/icons/open_source_icon.png" />
                             <h3>Open-source Projects</h3>
-                            <div class="indexInfoModule">
+                            <div class="indexInfoModule spacedParagraphs">
                                 <h4>[PHP] Pastrie</h4>
                                 <p>A webapp coded in PHP designed to enable users to easily deploy their own pastebin locally on their own network.</p>
-                                <br />
                                 <a target="_blank" href="https://github.com/magneticstain/pastrie">&rarr; View Source Code [GitHub]</a>
                             </div>
                             <hr />
-                            <div class="indexInfoModule">
+                            <div class="indexInfoModule spacedParagraphs">
                                 <h4>[PHP] SPliF</h4>
                                 <p>A lightweight PHP framework for use by web developers that provides a very basic file layout for building upon when creating webapps.</p>
-                                <br />
                                 <a target="_blank" href="https://github.com/magneticstain/SPliF">&rarr; View Source Code [GitHub]</a>
                             </div>
                             <br />

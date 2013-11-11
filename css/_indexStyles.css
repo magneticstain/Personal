@@ -15,7 +15,7 @@
 
 .dbTop
 {
-    height: 750px;
+    height: 725px;
     width: 425px;
 }
 
@@ -77,6 +77,11 @@ footer
     text-align: left;
 }
 
+.spacedParagraphs p
+{
+    margin-bottom: 30px;
+}
+
 /* IMGS */
 .indexInfoModule img
 {
@@ -93,7 +98,7 @@ footer
 
 .detailsBlob img
 {
-    margin: 40px 5px 0;
+    margin: 40px 5px;
 }
 
 #music p

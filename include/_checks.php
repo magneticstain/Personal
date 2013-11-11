@@ -11,6 +11,9 @@
     // this is necessary to display XML results correctly (character encoding especially)
     header('Content-type: text/html; charset=utf-8');
 
+    // set expiration date to take advantage of client-side caching
+    header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + 36000));
+
     // make sure session is started
     if(!isset($_SESSION))
     {
