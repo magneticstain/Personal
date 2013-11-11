@@ -27,6 +27,12 @@
     // set message clear flag
     $clearSavedData   =   true;
 
+    // set page title
+    if((!isset($pageTitle)) || (empty($pageTitle)))
+    {
+        $pageTitle  =   'Home';
+    }
+
     // generate page-specific content
     $content    =   '
                         <div class="detailsBlob dbTop">
