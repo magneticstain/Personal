@@ -10,6 +10,11 @@
     function getRecentTracks()
     {
         // scrape rss feed of Last.fm recent track list
+
+        // make sure url_allow_fopen php config option is set
+        // it's not recommended to set by default, so we'll enable it for the duration of this script
+        ini_set('allow_url_fopen ','1');
+
         // define XML URL
         $musicXML_URL   =   'http://ws.audioscrobbler.com/1.0/user/MagneticStain/recenttracks.rss';
 
@@ -34,7 +39,7 @@
         }
         else
         {
-            $musicTrackHTML =   '<p class="error">Could not load tracks :(</p>';
+            $musicTrackHTML =   '<p class="error">Uh-oh, Josh\'s recent tracks couldn\'t be loaded :(</p>';
         }
 
         return $musicTrackHTML;

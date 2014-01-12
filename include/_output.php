@@ -76,7 +76,7 @@
                     </div>
                     <nav>
                         <a href="https://www.carlso.net/" title="home">home</a>
-                        <a target="_blank" href="https://docs.google.com/file/d/0BykFe7XdLgqkVTVHdmd4U2tydFE/edit?usp=sharing" title="josh carlson\'s résumé">résumé</a>
+                        <a target="_blank" href="https://drive.google.com/file/d/0BykFe7XdLgqkR0oyMUdTUENndXM/edit?usp=sharing" title="josh carlson\'s résumé">résumé</a>
                         <h1>
                             <strong>Josh Carlson</strong>
                         </h1>
