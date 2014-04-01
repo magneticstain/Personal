@@ -80,7 +80,7 @@
                         <h1>
                             <strong>Josh Carlson</strong>
                         </h1>
-                        <a target="_blank" href="http://blog.carlso.net" title="josh carlson\'s blog">blog</a>
+                        <a target="_blank" href="http://carls.in/" title="josh carlson\'s blog">blog</a>
                         <a href="contact" title="contact josh carlson">contact</a>
                     </nav>
                     <div id="attnGrabber">
