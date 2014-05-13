@@ -39,9 +39,9 @@
                             <img height="128" width="128" alt="Programming" src="media/icons/open_source_icon.png" />
                             <h3>Open-source Projects</h3>
                             <div class="indexInfoModule spacedParagraphs">
-                                <h4>[PHP] Pastrie</h4>
-                                <p>A webapp coded in PHP designed to enable users to easily deploy their own pastebin locally on their own network.</p>
-                                <a target="_blank" href="https://github.com/magneticstain/pastrie">&rarr; View Source Code [GitHub]</a>
+                                <h4>[PHP] PrivyPaste</h4>
+                                <p>A webapp coded in PHP designed to enable users to easily, securely, and privately deploy their own pastebin locally on their own network.</p>
+                                <a target="_blank" href="https://github.com/magneticstain/PrivyPaste">&rarr; View Source Code [GitHub]</a>
                             </div>
                             <hr />
                             <div class="indexInfoModule spacedParagraphs">
