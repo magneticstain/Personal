@@ -69,10 +69,12 @@
                         <div class="detailsBlob dbBottom">
                             <img height="128" width="128" alt="Current Events" src="media/icons/current_events_icon.png" />
                             <h3>What I\'m Up To</h3>
-                            <div id="music" class="indexInfoModule">
-                                <h4>Recent Songs</h4>
-                                '.getRecentTracks().'
-                            </div>
+                            <!-- <div id="music" class="indexInfoModule"> -->
+                                <!-- <h4>Recent Songs</h4> -->
+                                '.
+                                //getRecentTracks().
+                                '
+                            <!-- </div> -->
                             <!-- BEGIN TWITTER CODE -->
                             <a class="twitter-timeline" href="https://twitter.com/MagneticStain" data-widget-id="382353525595848705">Tweets by @MagneticStain</a>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
